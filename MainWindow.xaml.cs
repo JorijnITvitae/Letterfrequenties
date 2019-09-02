@@ -37,8 +37,8 @@ namespace Letterfrequenties
         {
             // Create a dictionary to count how many times each letter is in the text
             var letters = new Dictionary<char, int>();
-            foreach (var c in "ABCDEFGHIJKLMNOPQRSTUVWXYZ")
-                letters.Add(c, 0);
+            foreach (var e in characters)
+                letters.Add(e.Value, 0);
 
             // Check all the characters in the text against the characters dictionary
             foreach (var c in input)
